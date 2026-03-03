@@ -11,6 +11,6 @@ package com.mycompany.exone;
 import java.util.*;
 public class ExOne {
     public static void main(String[] args) {
-        StudentManager<Student>
+        
     }
 }
