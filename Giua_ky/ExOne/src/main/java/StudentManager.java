@@ -8,17 +8,21 @@
  * @author Admin
  */
 import java.util.ArrayList;
+import java.util.List;
+
 public class StudentManager<T> {
-    private ArrayList<T> data = new ArrayList<>();
-    public void save(T item) {
-        data.add(item);
+    private List<T> data;
+    public StudentManager() {
+        this.data = new ArrayList<>();
     }
 
-    public T findById(int id) {
-        if (id < data.size()) {
-            return data.get(id);
-        }
-        return null;
+    public void add(T item) {
+        this.data.add(item);
     }
 
+    public List<T> getAll() {
+        return this.data;
+    }
 }
+
+
